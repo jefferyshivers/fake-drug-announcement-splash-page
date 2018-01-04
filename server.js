@@ -18,4 +18,4 @@ app.get(/^(.+)$/, (req, res) => {
   res.sendFile(req.params[0], { root: `${__dirname}/dist` })
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
