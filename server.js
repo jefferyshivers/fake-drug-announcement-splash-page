@@ -10,8 +10,12 @@ app.use(require('webpack-dev-middleware')(compiler, {
   publicPath: config.output.publicPath
 }));
 
-app.get('*', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile('dist/index.html', { root: __dirname });
+});
+
+app.get(/^(.+)$/, (req, res) => {
+  res.sendFile(req.params[0], { root: `${__dirname}/dist` })
 });
 
 app.listen(3000);

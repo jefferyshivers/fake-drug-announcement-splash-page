@@ -2,10 +2,11 @@
   "name": "drug-announcement",
   "version": "1.0.0",
   "description": "a single page app built with React/Redux (and CSS3/flexbox), bundled and served with the help of ExpressJS, NodeJS and Webpack",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/webpack-dev-server --port 3000 --content-base dist/",
+    "start": "node server.js",
+    "start-dev": "./node_modules/.bin/webpack-dev-server --port 3000 --content-base dist/",
     "build": "./node_modules/.bin/webpack"
   },
   "author": "Jeffery Shivers",
