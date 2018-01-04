@@ -1,0 +1,117 @@
+@import '../variables.scss';
+
+.Announcement {
+  .Footer {
+    background: var(--color-main-lightaccent);
+    flex-wrap: wrap;
+    border-top: 0.6em solid var(--color-main-darkaccent);
+    border: none;
+    width: 100%;
+    color: black;
+
+    > .inner {
+      position: relative;
+      width: calc(100% - 4em);
+      max-width: 80em;
+      margin: 2em;
+
+      > .icons,
+      > .text {
+        position: relative;
+        float: left;
+        display: flex;
+        flex-wrap: wrap;
+
+        height: 100%;
+      }
+
+      > .icons {
+        width: 15%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        > .icon {
+          width: 40%;
+          max-width: 4em;
+          min-width: 1.5em;
+          height: auto;
+          margin: 0.2em;
+        }
+      }
+
+      > .text {
+        width: calc(85% - 4em);
+        padding: 0 2em;
+
+
+        > div {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          margin: 0.5em 0;
+          width: 100%;
+
+          > .span,
+          > .separator {
+            position: relative;
+          }
+  
+          > .span {
+            > em {
+              font-weight: bold;
+              font-style: normal;
+            }
+          }
+  
+          > .separator {
+            height: 100%;
+            width: 0.1em;
+            background: black;
+            margin: 0 1em;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .Announcement {
+    .Footer {
+      flex-direction: column;
+
+      > .inner {
+        > .icons {
+          width: 100%;
+          justify-content: flex-start;
+
+          > .icon {
+            max-width: 2.5em;
+          }
+        }
+
+        > .text {
+          width: 100%;
+          padding: 0;
+
+          > div {
+            width: 100%;
+            flex-direction: column;
+
+            > div {
+              width: 100%;
+            }
+
+            > .separator {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

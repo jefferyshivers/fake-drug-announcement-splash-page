@@ -1,0 +1,16 @@
+@import '../variables.scss';
+
+.Announcement {
+  .button {
+    float: left;
+    background: var(--color-main-secondaccent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em auto;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    color: white;
+    cursor: pointer;
+  }
+}

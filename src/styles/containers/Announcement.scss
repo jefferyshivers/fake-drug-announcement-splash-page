@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+.Announcement {
+  position: relative;
+  width: 100%;
+  height: auto;
+  font-family: 'Open sans', sans-serif;
+
+  > .container,
+  > .main {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url('../../assets/auvi_background-purple_02.svg');
+    background-size: cover;
+  }
+
+  > .main {
+    .details-and-signup {
+      position: relative;
+      width: 100%;
+      max-width: 80em;
+      display: flex;
+      flex-direction: row;
+      z-index: 3;
+    }
+
+    .flair {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('../../assets/flair_01d.png');   
+      background-size: cover;
+      z-index: 2;
+    }
+  }
+
+  > #bumper {
+    position: relative;
+    width: 100%;
+  }
+
+  a, a:hover, a:active, a:visited {
+    text-decoration: none;
+    color: white;
+  }
+}

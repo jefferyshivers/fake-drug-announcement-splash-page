@@ -1,0 +1,12 @@
+node_modules
+
+dist/*
+!dist/index.html
+!Fake-Press-Release.pdf
+
+src/assets/*
+!facebook.svg
+!twitter.svg
+!flair_01d.png
+!Kitten.png
+!arrow_right.svg

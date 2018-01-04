@@ -1,0 +1,81 @@
+.Announcement {
+  .Signup {
+    width: 50%;
+    color: white;
+
+    > .inner {
+      width: calc(100% - 3em);
+      margin-left: 1em;
+
+      > .title {
+        font-size: 2em;
+      }
+
+      > .details,
+      > .notice {
+        margin: 2em auto;
+      }
+      > .notice {
+        font-weight: bold;
+      }
+
+      > form > label,
+      > form > input,
+      > form div {
+        font-size: calc(0.6vw + 0.8em);        
+      }
+
+      > form {
+        > input {
+          width: calc(100% - 0.6em);
+          margin: 0.2em auto 1em auto;
+          padding: 0.3em;
+          border: none;
+        }
+
+        > div {
+          margin: 1em auto;
+
+          input[type="radio"] {
+            margin: 1em;
+            width: 1.4em;
+            height: 1.6em;
+          }
+
+          label {
+            margin: 0 0.2em;
+          }
+        }
+
+        > div.receive-updates {
+          position: relative;
+          width: 100%;
+
+          input {
+            margin-right: 1em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .Announcement {
+    .Signup {
+      width: 100%;
+
+      > .inner {
+        width: calc(100% - 4em);
+        margin-left: 2em;
+        margin-top: 2em;
+
+        > form > label,
+        > form > input,
+        > form div {
+          font-size: 1.2em;        
+        }
+      }
+    }
+  }
+}
