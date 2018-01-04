@@ -18,4 +18,6 @@ app.get(/^(.+)$/, (req, res) => {
   res.sendFile(req.params[0], { root: `${__dirname}/dist` })
 });
 
-app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 3000, () => {
+  console.log("Express listening in %s mode", app.settings.env);
+});
