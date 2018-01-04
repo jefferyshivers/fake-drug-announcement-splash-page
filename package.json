@@ -1,6 +1,9 @@
 {
   "name": "drug-announcement",
   "version": "1.0.0",
+  "engines": {
+    "node": "8.7.0"
+  },
   "description": "a single page app built with React/Redux (and CSS3/flexbox), bundled and served with the help of ExpressJS, NodeJS and Webpack",
   "main": "server.js",
   "scripts": {
