@@ -48,3 +48,13 @@
     color: white;
   }
 }
+
+@media only screen and (max-width: 40em) {
+  .Announcement {
+    > .main {
+      .details-and-signup {
+        flex-direction: column;
+      }
+    }
+  }
+}
